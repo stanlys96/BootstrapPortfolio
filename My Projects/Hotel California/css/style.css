@@ -1,0 +1,308 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4rem;
+}
+
+#navbar {
+  background-color: #333;
+  color: #fff;
+}
+
+.current {
+  background: #444;  
+}
+
+.container-navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  overflow: auto;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+ }
+
+#navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
+}
+
+#navbar a:hover,
+#navbar ul li a.current {
+  color: #f7c08a;
+  background: #444;
+}
+
+/* Showcase */
+
+.container-2 {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 100%;
+  overflow: auto;
+}
+
+#showcase {
+  background: url(../img/showcase.jpg) no-repeat center center/cover;
+  height: 80vh;
+}
+
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  height: 100%;
+  /* padding-top: 170px;
+  text-align: center; */
+}
+
+#showcase h1 {
+  color: #fff;
+  /* padding-bottom: 50px; */
+  font-size: 60px;
+}
+
+span {
+  color: #f7c08a;
+}
+
+#showcase p {
+  font-size: 20px;
+  line-height: 2.2em;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  /* margin-top: 50px; */
+  background: #444;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 20px;
+}
+
+.btn:hover {
+  color: #000;
+  background: #f7c08a;
+}
+
+/* Imp */
+
+#imp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  color: #fff;
+}
+
+#imp img {
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+
+#imp .flex-item {
+  padding: 40px;
+  line-height: 1.7em;
+}
+
+#imp .flex-item p {
+  color: #fff;
+  line-height: 1.7em;
+  font-size: 1.2rem;
+  margin: 40px 0 50px;
+}
+
+/* Icons */
+#icon {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #444;
+  height: 100%;
+}
+
+#icon h2 {
+  margin: 20px;
+  font-size: 1.3rem;
+}
+
+#icon p {
+  font-size: 0.93rem;
+}
+
+#icon .col {
+  height: 300px;
+  padding: 50px 40px 0;
+}
+
+#icon .colour {
+  background: #f7c08a;
+}
+
+/* About */
+
+#about {
+  margin-bottom: 10px;
+}
+
+#about img {
+  width: 35%;
+  border-radius: 50%;
+  margin-left: 50px;
+  display: block;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+  padding: 40px 10px 10px 0;
+  color: #333;
+}
+
+#about h1 {
+  font-size: 2.2rem;
+}
+
+#about p {
+  margin-top: 40px;
+  height: 80%;
+  line-height: 2em;
+}
+
+/* Testimonials */
+
+#testimonials {
+  background: url(../img/test-bg.jpg) no-repeat center center/cover;
+  height: 600px;
+  color: #fff;
+  padding: 20px 0 80px;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  margin: 20px auto;
+  padding: 0 150px;
+}
+
+#testimonials h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 2.7rem;
+}
+
+.testimonials-container img {
+  width: 10%;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+#testimonials .guest-say {
+  display: flex;
+  padding: 30px;
+  background: #f7c08a;
+  opacity: 0.9;
+  color: #444;
+  line-height: 1.8em;
+  border-radius: 10px;
+}
+
+/* Section */
+#section-form {
+  padding: 30px 0;
+}
+
+.container-form {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-form h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.container-form p {
+  margin-top: 20px;
+}
+
+.form-group {
+  padding: 20px 0 0;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.form-group textarea {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+/* Contact */
+
+#contact {
+  background: #333;
+}
+
+.container-contact {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.container-things {
+  padding: 40px;
+  color: #fff;
+}
+
+.container-things h3 {
+  margin: 20px 0 40px;
+}
+
+/* Footer */
+#footer {
+  height: 100px;
+  text-align: center;
+  background: #444;
+  color: #fff;
+}
+
+#footer p {
+  padding-top: 40px;
+}

@@ -1,0 +1,292 @@
+:root {
+  --primary-color: #425b84;
+  --secondary-color: #5b7bb4;
+  --max-width: 1100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  font-weight: bold;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+span {
+  border-bottom: 2px solid #fff;
+}
+
+#main-header {
+  background: var(--secondary-color);
+}
+
+#main-header .container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+#main-header h1 {
+  font-size: 2.3rem;
+}
+
+/* Images */
+
+.img {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+}
+
+.img-server {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+}
+
+.account-1,
+.server-1,
+.server-3 {
+  left: 100px;
+  top: 125px;
+}
+
+.account-2,
+.server-2 {
+  right: 150px;
+  top: 150px;
+}
+
+/* Timeline */
+
+#timeline ul {
+  background: var(--primary-color);
+  padding: 40px 0;
+}
+
+#timeline ul > li {
+  width: 6px;
+  position: relative;
+  margin: 0 auto;
+  background: #fff;
+  list-style: none;
+  padding-top: 50px;
+}
+
+#timeline ul > li div {
+  position: relative;
+  width: 30rem;
+  background: var(--secondary-color);
+  padding: 1rem;
+  color: #fff;
+}
+
+#timeline ul > li:nth-child(even) div {
+  left: 40px;
+}
+
+#timeline ul > li:nth-child(odd) div {
+  left: -515px;
+}
+
+#timeline ul > li:after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  left: -10px;
+  top: 50px;
+}
+
+#timeline ul > li div:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  top: 5px;
+}
+
+#timeline ul > li:nth-child(even) div:after {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent var(--secondary-color) transparent transparent;
+}
+
+#timeline ul > li:nth-child(odd) div:after {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent var(--secondary-color);
+}
+
+#timeline ul li ol li {
+  width: 100%;
+}
+
+#timeline ul li:nth-child(even) ol li {
+  margin: 5px 0 0 15px;
+}
+
+#timeline ul li:nth-child(odd) ol li {
+  margin: 5px 0 0 15px;
+}
+
+@media (min-width: 1040px) {
+  #timeline ul > li div {
+    position: relative;
+    width: 30rem;
+    background: var(--secondary-color);
+    padding: 1rem;
+    color: #fff;
+  }
+  
+  #timeline ul > li:nth-child(even) div {
+    left: 40px;
+  }
+  
+  #timeline ul > li:nth-child(odd) div {
+    left: -515px;
+  } 
+}
+
+@media (min-width: 769px) and (max-width: 1039px) {
+  body {
+    font-size: 12px;
+  }
+
+  #timeline ul > li div {
+    position: relative;
+    width: 22rem;
+    background: var(--secondary-color);
+    padding: 1.5rem;
+    color: #fff;
+  }
+  
+  #timeline ul > li:nth-child(even) div {
+    left: 40px;
+  }
+  
+  #timeline ul > li:nth-child(odd) div {
+    left: -385px;
+  } 
+
+  .img {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+  }
+  
+  .img-server {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+  }
+  
+  .account-1,
+  .server-1,
+  .server-3 {
+    left: 50px;
+    top: 125px;
+  }
+  
+  .account-2,
+  .server-2 {
+    right: 100px;
+    top: 150px;
+  }
+}
+
+
+@media (min-width: 501px) and (max-width: 768px) {
+
+  body {
+    font-size: 10px;
+  }
+
+  #timeline ul > li div {
+    position: relative;
+    width: 15rem;
+    background: var(--secondary-color);
+    padding: 1.5rem;
+    color: #fff;
+  }
+  
+  #timeline ul > li:nth-child(even) div {
+    left: 40px;
+  }
+  
+  #timeline ul > li:nth-child(odd) div {
+    left: -275px;
+  } 
+
+  .img {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+  }
+  
+  .img-server {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+  }
+  
+  .account-1,
+  .server-1,
+  .server-3 {
+    left: 50px;
+    top: 125px;
+  }
+  
+  .account-2,
+  .server-2 {
+    right: 100px;
+    top: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  body {
+    font-size: 10px;
+  }
+
+  img {
+    display: none;
+  }
+
+  #timeline ul > li div {
+    position: relative;
+    width: 19rem;
+    background: var(--secondary-color);
+    padding: 1.5rem;
+    color: #fff;
+  }
+  
+  
+  #timeline ul > li:nth-child(odd) div {
+    left: 40px;
+  } 
+
+  #timeline ul li {
+    margin-left: 40px;
+  }
+  
+  #timeline ul > li:nth-child(odd) div:after {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent var(--secondary-color) transparent transparent;
+  }
+}

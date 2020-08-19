@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: cornflowerblue;
+      font-family: "Raleway";
+      line-height: 1.8;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    #container {
+      margin: auto;
+      max-width: 400px;
+      margin-top: 30px;
+      padding: 20px;
+    }
+
+    .wrapper {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .wrapper h1, p {
+      text-align: center;
+    }
+
+    .sign-p {
+      margin-top: 5px;
+      font-size: 13px;
+    }
+
+    .wrapper label {
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    .wrapper input {
+      width: 100%;
+      padding: 10px;
+      border: #ddd 1px solid;
+      border-radius: 5px;
+    }
+
+    .wrapper button {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 10px;
+      background-color: #49c1a2;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .wrapper button:hover {
+      background-color:forestgreen;
+    }
+
+    .bottom-p {
+      margin-top: 10px;
+      color: #fff;
+    }
+
+    .bottom-p a {
+      color: black;
+      transition: color 0.2s;
+    }
+
+    .bottom-p a:hover {
+      color: greenyellow;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="wrapper">
+      <h1>Sign Up</h1>
+      <p>It's free and only takes a minute</p>
+      <div class="textinput">
+        <label for="first">First Name</label>
+        <input type="text">
+      </div>
+      <div class="textinput">
+        <label for="last">Last Name</label>
+        <input type="text">
+      </div>
+      <div class="textinput">
+        <label for="email">Email</label>
+        <input type="email">
+      </div>
+      <div class="textinput">
+        <label for="password1">Password</label>
+        <input type="password">
+      </div>
+      <div class="textinput">
+        <label for="password2">Confirm Password</label>
+        <input type="password">
+      </div>
+      <button>Sign Up</button>
+      <p class="sign-p">By clicking the Sign Up button, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></p>
+    </div>
+    <p class="bottom-p">Already have an account? <a href="#">Login here</a></p>
+  </div>
+</body>
+</html>

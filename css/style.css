@@ -1,0 +1,77 @@
+body {
+  background-color: aquamarine;
+}
+
+#home h4 {
+  display: inline;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+#main-header img {
+  width: 100%;
+  height: 100%;
+}
+
+#resume .duties {
+  line-height: 2;
+}
+
+#main-header .port-item {
+  width: 20%;
+}
+
+#main-header .port-item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#main-header h6 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#main-header .cert {
+  position: relative;
+  right: 20px;
+}
+
+#projects img {
+  margin: 30px auto;
+  display: block;
+}
+
+#certifications img {
+  border: 1px solid #000;
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+.bg-black {
+  color: #fff;
+  background: #000;
+}
+
+.modal-img {
+  display: block;
+  margin: 20px auto;
+  width: 150px;
+  height: auto;
+}
+
+.modal p {
+  line-height: 1.5;
+}
+
+@media (min-width: 1199px) {
+  .port-item {
+    padding: 3.15em !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #projects img {
+    border: 2px solid #000;
+  }
+}
