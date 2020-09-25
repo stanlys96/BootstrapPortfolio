@@ -28,6 +28,10 @@ span {
   background: var(--secondary-color);
 }
 
+#main-header h3 {
+  margin-bottom: 20px;
+}
+
 #main-header .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -74,7 +78,7 @@ span {
   padding: 40px 0;
 }
 
-#timeline ul > li {
+#timeline ul>li {
   width: 6px;
   position: relative;
   margin: 0 auto;
@@ -83,7 +87,7 @@ span {
   padding-top: 50px;
 }
 
-#timeline ul > li div {
+#timeline ul>li div {
   position: relative;
   width: 30rem;
   background: var(--secondary-color);
@@ -91,15 +95,15 @@ span {
   color: #fff;
 }
 
-#timeline ul > li:nth-child(even) div {
+#timeline ul>li:nth-child(even) div {
   left: 40px;
 }
 
-#timeline ul > li:nth-child(odd) div {
+#timeline ul>li:nth-child(odd) div {
   left: -515px;
 }
 
-#timeline ul > li:after {
+#timeline ul>li:after {
   content: '';
   position: absolute;
   width: 25px;
@@ -110,7 +114,7 @@ span {
   top: 50px;
 }
 
-#timeline ul > li div:after {
+#timeline ul>li div:after {
   content: '';
   position: absolute;
   width: 0;
@@ -119,13 +123,13 @@ span {
   top: 5px;
 }
 
-#timeline ul > li:nth-child(even) div:after {
+#timeline ul>li:nth-child(even) div:after {
   left: -15px;
   border-width: 8px 16px 8px 0;
   border-color: transparent var(--secondary-color) transparent transparent;
 }
 
-#timeline ul > li:nth-child(odd) div:after {
+#timeline ul>li:nth-child(odd) div:after {
   right: -15px;
   border-width: 8px 0 8px 16px;
   border-color: transparent transparent transparent var(--secondary-color);
@@ -144,21 +148,21 @@ span {
 }
 
 @media (min-width: 1040px) {
-  #timeline ul > li div {
+  #timeline ul>li div {
     position: relative;
     width: 30rem;
     background: var(--secondary-color);
     padding: 1rem;
     color: #fff;
   }
-  
-  #timeline ul > li:nth-child(even) div {
+
+  #timeline ul>li:nth-child(even) div {
     left: 40px;
   }
-  
-  #timeline ul > li:nth-child(odd) div {
+
+  #timeline ul>li:nth-child(odd) div {
     left: -515px;
-  } 
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1039px) {
@@ -166,41 +170,41 @@ span {
     font-size: 12px;
   }
 
-  #timeline ul > li div {
+  #timeline ul>li div {
     position: relative;
     width: 22rem;
     background: var(--secondary-color);
     padding: 1.5rem;
     color: #fff;
   }
-  
-  #timeline ul > li:nth-child(even) div {
+
+  #timeline ul>li:nth-child(even) div {
     left: 40px;
   }
-  
-  #timeline ul > li:nth-child(odd) div {
+
+  #timeline ul>li:nth-child(odd) div {
     left: -385px;
-  } 
+  }
 
   .img {
     height: 150px;
     width: 150px;
     position: absolute;
   }
-  
+
   .img-server {
     position: absolute;
     height: 150px;
     width: 150px;
   }
-  
+
   .account-1,
   .server-1,
   .server-3 {
     left: 50px;
     top: 125px;
   }
-  
+
   .account-2,
   .server-2 {
     right: 100px;
@@ -215,41 +219,41 @@ span {
     font-size: 10px;
   }
 
-  #timeline ul > li div {
+  #timeline ul>li div {
     position: relative;
     width: 15rem;
     background: var(--secondary-color);
     padding: 1.5rem;
     color: #fff;
   }
-  
-  #timeline ul > li:nth-child(even) div {
+
+  #timeline ul>li:nth-child(even) div {
     left: 40px;
   }
-  
-  #timeline ul > li:nth-child(odd) div {
+
+  #timeline ul>li:nth-child(odd) div {
     left: -275px;
-  } 
+  }
 
   .img {
     height: 150px;
     width: 150px;
     position: absolute;
   }
-  
+
   .img-server {
     position: absolute;
     height: 150px;
     width: 150px;
   }
-  
+
   .account-1,
   .server-1,
   .server-3 {
     left: 50px;
     top: 125px;
   }
-  
+
   .account-2,
   .server-2 {
     right: 100px;
@@ -267,24 +271,24 @@ span {
     display: none;
   }
 
-  #timeline ul > li div {
+  #timeline ul>li div {
     position: relative;
     width: 19rem;
     background: var(--secondary-color);
     padding: 1.5rem;
     color: #fff;
   }
-  
-  
-  #timeline ul > li:nth-child(odd) div {
+
+
+  #timeline ul>li:nth-child(odd) div {
     left: 40px;
-  } 
+  }
 
   #timeline ul li {
     margin-left: 40px;
   }
-  
-  #timeline ul > li:nth-child(odd) div:after {
+
+  #timeline ul>li:nth-child(odd) div:after {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent var(--secondary-color) transparent transparent;
